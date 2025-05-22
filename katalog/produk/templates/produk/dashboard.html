@@ -1,0 +1,16 @@
+{% extends 'produk/base.html' %}
+{% block content %}
+<h2 class="mb-4">Pilih Kategori</h2>
+<div class="row">
+  {% for kategori in kategori_list %}
+  <div class="col-md-4">
+    <div class="card mb-3 shadow">
+      <div class="card-body">
+        <h5 class="card-title">{{ kategori }}</h5>
+        <a href="/produk/{{ kategori }}/" class="btn btn-primary">Lihat Produk</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

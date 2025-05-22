@@ -1,0 +1,9 @@
+{% extends 'produk/base.html' %}
+{% block content %}
+<h2>Beranda Toko: {{ nama_toko }}</h2>
+<ul class="list-group">
+  {% for p in produk %}
+  <li class="list-group-item">{{ p }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

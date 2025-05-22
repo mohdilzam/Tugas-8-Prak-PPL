@@ -1,0 +1,8 @@
+{% extends 'produk/base.html' %}
+{% block content %}
+<h2>{{ item.nama }}</h2>
+<p><strong>Kategori:</strong> {{ item.kategori }}</p>
+<p>{{ item.deskripsi }}</p>
+<p><strong>Toko:</strong> <a href="/toko/{{ item.toko }}/">{{ item.toko }}</a></p>
+<a href="/produk/{{ item.kategori }}/" class="btn btn-secondary">Kembali ke Kategori</a>
+{% endblock %}
